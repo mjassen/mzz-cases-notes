@@ -303,7 +303,7 @@ class View
 				echo $tdWithClass . $result[$i][$k]."</td>";
       	echo $tdWithClass;
 			// -g-> Changed to allow for big amounts of text.
-			echo "<input type='text' name='".$result[$i][1]."' style='width:250px;'/> ";
+			echo "<input type='text' name='".$result[$i][1]."' id='".$result[$i][1]."' style='width:250px;'/> ";
 			//echo '<textarea name="'.$result[$i][1].'" wrap="hard" rows="3" cols="15"></textarea>';
 			echo "</td>";
 			echo "</tr>";
@@ -432,8 +432,14 @@ class View
 .tdheader { background-color:#bbb;}
 
 </style>
+<script type="text/javascript">
+function FocusOnInput()
+{
+     document.getElementById("description").focus();
+}
+</script>
 </head>
-<body>
+<body onload="FocusOnInput()">
 <div id="wrapper">
 <?php
 
