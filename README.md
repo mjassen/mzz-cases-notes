@@ -3,4 +3,6 @@ The purpose of this script is to allow the user, let's say a software support ag
 
 The timestamp auto-updates each time the form is refreshed. JavaScript puts the cursor in the correct field so that the user doesn't have to lift their hands from the keybord before entering the next note.
 
-The notes become saved into a .sqlite database file.
+The notes become saved into a .sqlite database file ( see the included file *.db)
+
+See the included screenshot for how the app looks like in action! (*mzz-cases-notes-screenshot.png)
