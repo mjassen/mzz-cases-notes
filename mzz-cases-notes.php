@@ -32,7 +32,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  
 // this php script expects a database cases_notes.db in the same directory, with a table in it to hold the data.
 // the query to create table in sqlite database: 
-// CREATE TABLE "cases_notes" ('date_time' DATETIME DEFAULT CURRENT_TIMESTAMP, 'note' TEXT, 'tag' TEXT)
+// CREATE TABLE "cases_notes" ('date_time' DATETIME DEFAULT CURRENT_TIMESTAMP, 'description' TEXT, 'tag' TEXT)
  
 //Edit the following variables to suit your needs
 
@@ -432,12 +432,9 @@ class View
 .tdheader { background-color:#bbb;}
 
 </style>
-<script type="text/javascript">
-function FocusOnInput()
-{
-     document.getElementById("description").focus();
-}
-</script>
+
+<script src="mzz_focusoninput.js"></script> 
+
 </head>
 <body onload="FocusOnInput()">
 <div id="wrapper">
